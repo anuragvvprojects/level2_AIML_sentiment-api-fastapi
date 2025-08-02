@@ -1,16 +1,43 @@
 # Level 2 Implementation
+
+### File Structure
+
+```
 level2_implementation/
 ├── app/
-│   └── main.py           ← FastAPI app with logging
+│   ├── main.py            # FastAPI app with endpoints and logging
+│   ├── log_config.yaml    # Custom logging config for Uvicorn
 ├── model/
-│   └── load_model.py     ← Model loader (singleton)
-├── requirements.txt
-├── Dockerfile
-├── .dockerignore
-└── README.md
+│   └── load_model.py      # Model loader (Hugging Face sentiment pipeline)
+├── requirements.txt       # Python dependencies
+├── Dockerfile             # Docker container setup
+├── .dockerignore          # Ignore cache/files during build
+└── README.md              # Project documentation
+```
 
+## How to run
+
+## 🐳 Dockerized Deployment
+
+### Build the Docker image
+
+```bash
 docker build -t sentiment-api .
+```
+
+### Run the container
+
+```bash
 docker run -p 8000:8000 sentiment-api
+```
+
+### Stop a running container
+
+```bash
+docker ps        # get container ID
+docker stop <container_id>
+```
+
 
 ### Testing 
 ### ✅ Send a Request (Terminal)
