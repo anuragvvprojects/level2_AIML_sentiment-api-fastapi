@@ -1,0 +1,10 @@
+{
+  "dataset": "SST2 (dev)",
+  "model": "distilbert-base-uncased-finetuned-sst-2-english",
+  "metrics": {
+    "accuracy": 0.92,
+    "precision_macro": 0.92,
+    "recall_macro": 0.92,
+    "f1_macro": 0.92
+  }
+}
