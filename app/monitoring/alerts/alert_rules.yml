@@ -1,0 +1,17 @@
+groups:
+  - name: sentiment-api
+    rules:
+      - alert: NoTraffic
+        expr: sum(rate(app_requests_total[5m])) == 0
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "No traffic observed in the last 10 minutes"
+      - alert: ReadinessDown
+        expr: app_ready == 0
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Service not ready for at least 5 minutes"
