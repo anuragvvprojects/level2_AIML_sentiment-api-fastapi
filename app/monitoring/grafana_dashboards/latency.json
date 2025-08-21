@@ -1,0 +1,15 @@
+{
+  "title": "Latency (placeholder)",
+  "schemaVersion": 38,
+  "panels": [
+    {
+      "type": "graph",
+      "title": "Request Rate",
+      "targets": [
+        {
+          "expr": "sum(rate(app_requests_total[5m]))"
+        }
+      ]
+    }
+  ]
+}

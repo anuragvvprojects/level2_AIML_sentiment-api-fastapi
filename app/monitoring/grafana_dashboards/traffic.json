@@ -1,0 +1,15 @@
+{
+  "title": "Traffic (placeholder)",
+  "schemaVersion": 38,
+  "panels": [
+    {
+      "type": "graph",
+      "title": "RPS",
+      "targets": [
+        {
+          "expr": "sum(rate(app_requests_total[1m]))"
+        }
+      ]
+    }
+  ]
+}
