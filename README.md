@@ -21,7 +21,7 @@ level2_implementation/
 
 ### Build the Docker image
 
-```bash
+```bash  
 docker build -t sentiment-api .
 ```
 
