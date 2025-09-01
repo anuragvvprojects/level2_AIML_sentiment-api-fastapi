@@ -1,0 +1,24 @@
+{
+  "title": "Sentiment API \u2013 Overview",
+  "schemaVersion": 38,
+  "panels": [
+    {
+      "type": "graph",
+      "title": "HTTP Requests (1m rate)",
+      "targets": [
+        {
+          "expr": "sum(rate(app_requests_total[1m]))"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Readiness",
+      "targets": [
+        {
+          "expr": "app_ready"
+        }
+      ]
+    }
+  ]
+}
