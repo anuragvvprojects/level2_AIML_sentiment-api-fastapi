@@ -1,0 +1,26 @@
+{
+  "model": "mock-llm-7b",
+  "dataset": "mock_eval_set",
+  "metrics": {
+    "accuracy": 0.87,
+    "f1": 0.85,
+    "bleu": 0.42,
+    "rouge": {
+      "rouge-1": 0.56,
+      "rouge-2": 0.33,
+      "rouge-l": 0.49
+    }
+  },
+  "examples": [
+    {
+      "input": "What is AI?",
+      "prediction": "AI is artificial intelligence.",
+      "reference": "AI stands for Artificial Intelligence."
+    },
+    {
+      "input": "Translate 'hello' to Spanish",
+      "prediction": "hola",
+      "reference": "hola"
+    }
+  ]
+}

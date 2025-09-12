@@ -1,0 +1,14 @@
+Mock LLM Test Report
+====================
+
+Model: mock-llm-7b
+Dataset: mock_eval_set
+
+Accuracy: 0.87
+F1 Score: 0.85
+BLEU: 0.42
+
+Rouge Scores:
+- Rouge-1: 0.56
+- Rouge-2: 0.33
+- Rouge-L: 0.49
