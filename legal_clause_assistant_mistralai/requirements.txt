@@ -1,0 +1,11 @@
+langchain
+chromadb
+openai
+huggingface-hub
+fastapi
+uvicorn
+gradio
+ragas
+pydantic
+python-dotenv
+PyPDF2

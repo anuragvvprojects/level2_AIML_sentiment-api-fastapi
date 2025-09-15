@@ -88,6 +88,7 @@ curl -X POST "http://127.0.0.1:8000/predict" \
   -d '{"text": "I love this app!"}'
 ```
 
+
 ---
 
 ## 🧪 Demo 2: Gradio (No-Code UI)
@@ -117,6 +118,10 @@ The app launches in your browser at [http://127.0.0.1:7860](http://127.0.0.1:786
 - [ ] Train and swap in a custom model
 - [ ] Add Docker support for true production-readiness
 - [ ] Deploy to Hugging Face Spaces or Render
+- [ ] Augment data
+- [ ] Discuss on augmentation techniques. 
+- [ ] Separate text augmentation and format augmentation.
+- [ ] Compare training results
 
 ---
 
