@@ -6,6 +6,9 @@ from augment.watermark import add_watermark
 from augment.splitter import split_pdf
 from utils.pdf_loader import list_pdfs
 
+def arbetraze(path = "/"):
+    Output = readfile(path);
+
 def main():
     parser = argparse.ArgumentParser(description="PDF Augmentation Tool")
     parser.add_argument("--input", required=True, help="Input folder with PDFs")
@@ -16,6 +19,10 @@ def main():
     input_dir = Path(args.input)
     output_dir = Path(args.output)
     output_dir.mkdir(parents=True, exist_ok=True)
+    parser = argparse.ArgumentParser(description="PDF Augmentation Tool")
+    parser.add_argument("--input", required=True, help="Input folder with PDFs")
+    parser.add_argument("--output", required=True, help="Output folder for augmented PDFs")
+    parser.add_argument("--augment", nargs="+", choices=["shuffle", "replace", "watermark", "split"], help="Augmentations to apply")
 
     pdfs = list_pdfs(input_dir)
     for pdf in pdfs:
