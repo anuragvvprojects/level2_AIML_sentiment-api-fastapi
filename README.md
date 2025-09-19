@@ -325,5 +325,5 @@ docker logs <container_id>
 
 ## 👨‍💻 Author
 
-Built by Anurag V. V. as part of a 3-day AI/ML deployment sprint.  
+Built by Anurag V. V. as part of a AI/ML deployment sprint.  
 Goal: Achieve production-grade ML API development using modern Python, Docker, and API engineering best practices.
